@@ -1,22 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>个人网站</title>
-    <style>
-        /* 在这里添加你的自定义样式 */
-    </style>
+<style>
+    .pretty-link {  
+      display: inline-block;  
+      color: #ffffff; /* 链接文字颜色 */  
+      background-color: #007bff; /* 链接背景颜色 */  
+      text-decoration: none; /* 移除下划线 */  
+      padding: 5px 10px; /* 内边距 */  
+      border-radius: 5px; /* 边框圆角 */  
+      transition: background-color 0.3s ease; /* 背景颜色过渡效果 */  
+    }  
+
+    .pretty-link:hover {  
+      background-color: #0056b3; /* 鼠标悬停时的背景颜色 */  
+    }  
+    
+    body {  
+        /* 设置背景图片，url为图片的路径 */  
+        background-image: url('first.jpg');  
+        /* 背景图片不重复 */  
+        background-repeat: no-repeat;  
+        /* 背景图片居中显示 */  
+        background-position: center center;  
+        /* 背景图片大小覆盖整个容器 */  
+        background-size: cover;  
+        /* 背景图片固定，不随页面滚动 */  
+        background-attachment: fixed;  
+    }  
+    #main-title {
+        text-align: center;
+        position: relative;
+        top: 80px;
+    }
+    #content {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    -->  
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+    }
+    #links {
+        text-align: center;
+        padding-top: 50px;
+    }
+    #links a {
+        margin: 10px;
+    }
+    #navigation {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+    }
+    #navigation ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    #navigation li {
+        margin: 0 10px;
+    }
+    #navigation a {
+        color: #fff;
+        text-decoration: none;
+    }
+    #navigation a:hover {
+        text-decoration: underline;
+    }
+</style>
 </head>
 <body>
-    <header>
-        <h1>欢迎来访</h1>
-    </header>
-    <section>
-        <img src="your_image_url.jpg" alt="你的图片">
-        <p>文字内容</p>
-    </section>
-    <footer>
-        <!-- 在这里添加你的网站页脚等内容 -->
-    </footer>
+    <div id="navigation">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">关于我</a></li>
+            <li><a href="#">联系我</a></li>
+        </ul>
+    </div>
+    <div id="main-title">
+        <h1>欢迎来访！</h1>
+        <h2>欢迎来到本网页。</h2>
+    </div>
+    <div id="content">
+        <p>欢迎来到我的博客！
+
+            很高兴你们能在这里驻足，感谢你们的到来。这里是我分享思考、生活和学习的平台，希望你们能在这里找到感兴趣的内容。
+            
+            博客是一个开放的平台，期待与你们交流和学习。请随时留下你们的评论和建议，让这个博客更加丰富多彩。
+            
+            再次感谢你们的到访，希望你们在这里度过愉快的时光，欢迎常来！</p>
+    </div>
+    <div id="links">
+        <a href="IHEAS.html" class="pretty-link">智慧作业评价辅助系统</a>  
+        <a href="rt.html" class="pretty-link">转盘游戏</a>  
+        <a href="kit.html" class="pretty-link">多功能工具包</a>  
+        <a href="other.html" class="pretty-link">其他</a>  
+        <!--<a href="#" class="pretty-link"></a>-->
+    </div>
 </body>
 </html>
